@@ -18,19 +18,19 @@ class Bank:
 
 
     def __jackpot(self):
-        return f'your money is {self._balance * 10}'
+        return f'your balance is {self._balance * 10}'
 
     def acj(self):
         return self.__jackpot()
 
 
     def _steal(self):
-        return self._balance + akcha._balance
+        return f'{self._name} stole your money and now has: {self._balance + akcha._balance}'
 
 
 
-akcha = Bank('aizhan', 500)
-akcha2 = Bank('beka', 10)
+akcha = Bank('aizhan', 9999)
+akcha2 = Bank('gru', 10)
 print(akcha.moneyX())
 print(akcha._kill())
 print(akcha.acj())
